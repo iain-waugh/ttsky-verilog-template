@@ -7,13 +7,17 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+# Overview
+
+These docs are deliberately poor because I only want to see the flow run, I am not taping this out.
+
 ## How it works
 
-Explain how your project works
+It copies an existing gamepad demo from [here](https://vga-playground.com/?preset=gamepad) with some minor changes.
 
 ## How to test
 
-Explain how to use your project
+Press buttons.
 
 ## External hardware
 

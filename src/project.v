@@ -74,6 +74,7 @@ module tt_um_vga_example (
   // Colors
   localparam [5:0] BLACK = {2'b00, 2'b00, 2'b00};
   localparam [5:0] GREEN = {2'b00, 2'b11, 2'b00};
+  localparam [5:0] RED   = {2'b11, 2'b00, 2'b00};
   localparam [5:0] WHITE = {2'b11, 2'b11, 2'b11};
 
   // Glyph definitions (8x8)
@@ -244,7 +245,7 @@ module tt_um_vga_example (
       B <= 0;
     end else begin
       if (video_active) begin
-        {R, G, B} <= any_pressed ? GREEN : any_active ? WHITE : BLACK;
+        {R, G, B} <= any_pressed ? GREEN : any_active ? RED : BLACK;
       end else begin
         {R, G, B} <= 0;
       end
